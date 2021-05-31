@@ -1,0 +1,37 @@
+.header {
+    margin: 20px;
+    display: flex;
+    width: 650px;
+    transition-duration: 0.6s;
+    transform: translate(-330px);
+    align-items: center;
+}
+.header:hover {
+    transition-duration: 0.6s;
+    transform: translate(0px);
+}
+.pages {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: #282c34;
+    padding: 10px;
+    border: 1px solid rgba(30, 241, 13, 0.45);
+    border-radius: 5px;
+
+}
+.link:hover {
+    background-color: rgba(30, 241, 13, 0.1);
+}
+.activeLink {
+    background-color: rgba(30, 241, 13, 0.45);
+    border-radius: 5px;
+}
+.activeLink:hover {
+    background-color: rgba(30, 241, 13, 0.45);
+    border-radius: 5px;
+}

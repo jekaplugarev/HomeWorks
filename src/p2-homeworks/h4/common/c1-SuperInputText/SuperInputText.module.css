@@ -1,0 +1,34 @@
+.superInput {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+.container {
+
+}
+.errorInput {
+    margin: 5px;
+    border: 2px solid red;
+    background: rgba(255,0,0,0.1);
+    outline: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    text-transform: uppercase;
+    height: 25px;
+}
+.enter {
+    color: green;
+    text-transform: uppercase;
+    height: 25px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+}

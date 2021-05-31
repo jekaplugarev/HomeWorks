@@ -1,0 +1,38 @@
+.default {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 2px solid cornflowerblue;
+    text-transform: uppercase;
+    color: white;
+}
+
+.red {
+    background: red;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100px;
+    text-transform: uppercase;
+    border: 2px solid red;
+    color: white;
+}
+
+.default:hover {
+    background-color: transparent;
+    color: black;
+}
+.red:hover {
+    background: transparent;
+    color: black;
+}
+.default:disabled {
+    background: transparent;
+    border: 2px solid gray;
+    color: gray;
+}
+.default:disabled:hover {
+    background: transparent;
+
+}

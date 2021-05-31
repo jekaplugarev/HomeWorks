@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+.btn {
+    margin: 10px;
+    border-radius: 5px;
+    width: 50px;
+    background-color: aliceblue;
+;
+}
+.error {
+    border: 1px solid red;
+    margin: 10px;
+    background-color: aliceblue;
+}
+.error:focus {
+    outline: none;
+}
+
+.good {
+    border: 1px solid green;
+    margin: 10px;
+    outline: none;
+    background-color: aliceblue;
+}
+.good:focus {
+    outline: none;
+}
+.totalUsers {
+    margin: 10px;
+    font-weight: bold;
+}
+.errorAlert {
+    height: 20px;
+    margin-left: 10px;
+    color: red;
+}

@@ -1,0 +1,24 @@
+.checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    appearance: none;
+    background: url("https://www.kindpng.com/picc/m/111-1116779_green-check-mark-svg-hd-png-download.png") no-repeat center center;
+    background-size: 85%;
+}
+
+.spanClassName {
+
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

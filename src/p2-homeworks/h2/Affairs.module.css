@@ -1,0 +1,44 @@
+.name {
+    width: 100px;
+    margin: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+.btn {
+    width: 80px;
+    margin: 10px;
+    text-transform: uppercase;
+    color: black;
+
+}
+.btnX {
+    width: 50px;
+    margin: 10px;
+    text-transform: uppercase;
+    color: black;
+
+}
+.btnX:hover {
+    background-color: darkmagenta;
+    border-color: darkblue;
+
+}
+.btn:hover {
+    background-color: #61dafb;
+    border-color: darkblue;
+}
+.container {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    background-color: darkblue;
+}
+.high {
+    color: green;
+}
+.middle {
+    color: orange;
+}
+.low {
+    color: red;
+}

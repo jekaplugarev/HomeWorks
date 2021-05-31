@@ -1,0 +1,52 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin: 15px;
+}
+.avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+/*.angle {*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    background: radial-gradient(circle at 0 0, rgba(255,255,255,0) 15px, rgba(0,0,0,0.3) 0);*/
+/*}*/
+.content {
+    position: relative;
+    padding: 15px;
+    border-radius: 15px 15px 15px 0;
+    background-color: rgba(0,0,0,0.3);
+}
+/*Мой вариант уголка*/
+.content:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    margin-left: 0px;
+    left: -14px;
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid rgba(0,0,0,0.3);
+    border-bottom: 7px solid rgba(0,0,0,0.3);
+    border-top: 7px solid transparent;
+    z-index: 10;
+}
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-break: break-word;
+    color: #bbffbb;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bbffbb;
+}
+.time {
+    color: #bbffbb;
+    display: flex;
+    justify-content: flex-end;
+}
