@@ -4,13 +4,15 @@
     border-radius: 10px;
     outline: none;
 }
+
 .container {
 
 }
+
 .errorInput {
     margin: 5px;
     border: 2px solid red;
-    background: rgba(255,0,0,0.1);
+    background: rgba(255, 0, 0, 0.1);
     outline: none;
     padding: 8px;
     border-radius: 10px;
@@ -20,12 +22,9 @@
     color: red;
     text-transform: uppercase;
     height: 25px;
+    text-align: center;
 }
-.enter {
-    color: green;
-    text-transform: uppercase;
-    height: 25px;
-}
+
 .input {
 
 }
