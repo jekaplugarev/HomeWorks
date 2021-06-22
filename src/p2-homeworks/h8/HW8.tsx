@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from './HW8.module.css'
+import {checkAC, sortUpAC, sortDownAC} from './bll/homeWorkReducer';
 
 export type UserType = {
     _id: number
@@ -29,9 +30,9 @@ function HW8() {
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
-    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'}))
-    const check = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: 18}))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, sortUpAC()))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, sortDownAC()))
+    const check = () => setPeople(homeWorkReducer(initialPeople, checkAC()))
 
     return (
         <div>

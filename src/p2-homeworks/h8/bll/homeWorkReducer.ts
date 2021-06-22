@@ -10,7 +10,7 @@ type SortDownType = {
 }
 type CheckType = {
     type: 'check'
-    payload: 18
+    payload: number
 }
 
 type ActionType = SortUpType | SortDownType | CheckType
@@ -31,12 +31,12 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Arr
     }
 }
 
-export const sortUp = (): SortUpType => {
+export const sortUpAC = (): SortUpType => {
     return {type: 'sort', payload: 'up'}
 }
-export const sortDown = (): SortDownType => {
+export const sortDownAC = (): SortDownType => {
     return {type: 'sort', payload: 'down'}
 }
-export const check = (): CheckType => {
+export const checkAC = (): CheckType => {
     return {type: 'check', payload: 18}
 }
