@@ -1,13 +1,21 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {useDispatch, useSelector} from 'react-redux';
+import {AppStoreType} from './bll/store';
+import {loadingAC} from './bll/loadingReducer';
+import style from './H10.module.css'
 
 function HW10() {
     // useSelector, useDispatch
-    const loading = false
+    const dispatch = useDispatch()
+    const loading = useSelector<AppStoreType, boolean>(state => state.loading.loading)
+    // const loading = false
 
     const setLoading = () => {
         // dispatch
         // setTimeout
+        dispatch(loadingAC(true))
+        setTimeout(() => dispatch(loadingAC(false)), 2000)
         console.log('loading...')
     };
 
@@ -15,18 +23,21 @@ function HW10() {
         <div>
             <hr/>
             homeworks 10
-
             {/*should work (должно работать)*/}
             {loading
                 ? (
-                    <div>крутилка...</div>
+                    <div className={style.container}>
+                        <div className={`${style.dash} ${style.uno}`}></div>
+                        <div className={`${style.dash} ${style.dos}`}></div>
+                        <div className={`${style.dash} ${style.tres}`}></div>
+                        <div className={`${style.dash} ${style.cuatro}`}></div>
+                    </div>
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )
             }
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
