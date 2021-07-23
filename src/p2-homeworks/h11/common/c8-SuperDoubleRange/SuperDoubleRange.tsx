@@ -4,7 +4,7 @@ import {makeStyles} from '@material-ui/core';
 
 type SuperDoubleRangePropsType = {
     onChangeSuperRange?: (value: number | number[]) => void
-    value?: number | number[]
+    value?: number[]
     // min, max, step, disable, ...
 }
 
@@ -28,7 +28,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     const classes = useStyles();
 
     const handleChange = (event: ChangeEvent<{}>, newValue: number | number[]) => {
-        onChangeSuperRange && onChangeSuperRange(newValue as number[]);
+        onChangeSuperRange && onChangeSuperRange(newValue);
     };
 
     return (
