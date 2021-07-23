@@ -1,7 +1,6 @@
 import React from "react";
 
 type RequestPropsType = {
-
     resp: string
 }
 

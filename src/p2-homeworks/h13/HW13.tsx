@@ -38,7 +38,6 @@ function HW13() {
                     onChange={changeHandler}
                 >Отправить запрос</SuperCheckbox>
                 <Request
-
                     resp={resp}
                 />
                 <hr/>
