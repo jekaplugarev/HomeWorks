@@ -32,7 +32,7 @@ function HW13() {
             <div>
                 <hr/>
                 <span>
-                <h2>homeworks 13</h2>
+                <p>homeworks 13</p>
             </span>
                 <SuperCheckbox
                     onChange={changeHandler}
